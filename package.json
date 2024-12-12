@@ -12,7 +12,6 @@
   "license": "ISC",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241205.0",
-    "@remix-run/cloudflare": "^2.15.1",
     "orval": "^7.3.0",
     "typescript": "^5.7.2"
   }
