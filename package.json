@@ -1,0 +1,19 @@
+{
+  "name": "orval-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "apigen": "orval --config ./orval.config.ts",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241205.0",
+    "@remix-run/cloudflare": "^2.15.1",
+    "orval": "^7.3.0",
+    "typescript": "^5.7.2"
+  }
+}

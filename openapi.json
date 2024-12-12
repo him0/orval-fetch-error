@@ -1,0 +1,44 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "sandbox",
+    "description": "",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "root.get_index",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/root.GetIndexResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "root.GetIndexResponse": {
+        "type": "object",
+        "required": ["user_ids"],
+        "properties": {
+          "user_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        }
+      }
+    }
+  }
+}
